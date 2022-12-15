@@ -1,0 +1,809 @@
+﻿package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio01 {
+
+
+
+	public static void main(String[] args) {
+
+		/*1)Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
+
+			contrário escrever NÃO É MAIOR QUE 10!.*/
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite um numero");
+
+		
+
+		int numero=sc.nextInt();
+
+		
+
+		if (numero>10) {
+
+			System.out.println("O numero digitado é maior que 10");
+
+		} else {
+
+			System.out.println("O numero digitado não é maior que 10 ");
+
+		}
+
+		
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class exercicio02 {
+
+
+
+	public static void main(String[] args) {
+
+		/*2) Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo).*/
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite um numero");
+
+		
+
+		int numero=sc.nextInt();
+
+		
+
+		if (numero>=0) {
+
+			System.out.println("Positivo");
+
+		}else {
+
+			{
+
+				System.out.println("Negativo");
+
+			}
+
+		}
+
+			
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+====================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio03 {
+
+
+
+	public static void main(String[] args) {
+
+		/*3) As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se foremcompradas pelo menos 12. 
+
+		 * Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra.*/
+
+		 
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite a quantidade de maças compradas :");
+
+		double macascompradas = sc.nextFloat();
+
+		if (macascompradas<12) {
+
+			double calculomacas= macascompradas*1.30;
+
+			System.out.println("O valor a ser pago será " +calculomacas);
+
+		}else if (macascompradas>=12) {
+
+			double calculomacas=macascompradas*1.00;
+
+			System.out.println("O valor a ser pago será "+calculomacas);
+
+			sc.close();
+
+		}
+
+			
+
+	}
+
+
+
+}
+
+===========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio04 {
+
+
+
+	public static void main(String[] args) {
+
+		/* 4) Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e
+
+		escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o aluno é aprovado).
+
+		Escrever também a média calcula*/
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a primeira nota: ");
+
+		int primeiranota = sc.nextInt();
+
+		System.out.println("Digite a segunda nota: ");
+
+		int segundanota = sc.nextInt();
+
+		int notamedia = (primeiranota+segundanota)/2;
+
+			if(notamedia>=6) {
+
+				System.out.println("Aluno aprovado. ");
+
+			}else {
+
+				System.out.println("O aluno está reprovado. ");
+
+			}
+
+			
+
+		sc.close();
+
+		
+
+
+
+	}
+
+
+
+}
+
+
+
+==================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio05 {
+
+
+
+	public static void main(String[] args) {
+
+		/*5) Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano 
+
+		 * (não é necessário considerar o mês em que a pessoa nasceu).
+
+		 */
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Ano Atual");
+
+		System.out.println("Ano nascimento");
+
+		int anoatual = sc.nextInt();
+
+		int anonascimento = sc.nextInt();
+
+		int voto =anoatual-anonascimento;
+
+		if (voto>18) {
+
+			System.out.println("Você pode votar");
+
+		}else
+
+			System.out.println("Você não pode votar");
+
+		
+
+		sc.close();
+
+	}
+
+
+
+}
+
+========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio06 {
+
+
+
+	public static void main(String[] args) {
+
+		//6) Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.*/
+
+		
+
+
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println("Digite o Primeiro Valor: ");
+
+		int valor01 = sc.nextInt();
+
+
+
+		System.out.println("Digite o Segundo Valor: ");
+
+		int valor02 = sc.nextInt();
+
+
+
+		if (valor01 > valor02) {
+
+			System.out.println("O maior Valor é : "+valor01);
+
+		}else {
+
+			System.out.println("O maior valor é : "+valor02);
+
+		}
+
+		
+
+		sc.close();
+
+		
+
+
+
+	}
+
+
+
+}
+
+
+
+=========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio07 {
+
+
+
+	public static void main(String[] args) {
+
+		// 7) Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.*/
+
+		
+
+
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println("Digite o Primeiro Valor: ");
+
+		int valor01 = sc.nextInt();
+
+
+
+		System.out.println("Digite o segundo Valor: ");
+
+		int valor02 = sc.nextInt();
+
+
+
+		if (valor01 > valor02) {
+
+			System.out.println("A ordem Crescente dos numero é: " + valor02 + (",") + valor01);
+
+		} else {
+
+			System.out.println("A ordem Crescente dos numero é: " + valor01 + (",") + valor02);
+
+		}
+
+
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+
+
+========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio08 {
+
+
+
+	public static void main(String[] args) {
+
+		/*
+
+		 * 8) Ler a hora de início e a hora de fim de um jogo de Xadrez (considere
+
+		 * apenas horas inteiras, sem os minutos) e calcule a duração do jogo em horas,
+
+		 * sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo
+
+		 * pode iniciar em um dia e terminar no dia seguinte.
+
+		 */
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		System.out.println("Digite a hora do inicio: ");
+
+		int horaInicio = sc.nextInt();
+
+
+
+		System.out.println("Digite a hora do fim: ");
+
+		int horaFim = sc.nextInt();
+
+
+
+		int resultadoDoJogo = horaFim - horaInicio;
+
+
+
+		if (resultadoDoJogo > 0) {
+
+			System.out.println("A partida de Xadrez durou " + resultadoDoJogo + " Horas ");
+
+		} else {
+
+			int resultadoDoJogoAcabadoNoDiaSeguinte = resultadoDoJogo + 24;
+
+			System.out.println("A partida de Xadrez Durou " + resultadoDoJogoAcabadoNoDiaSeguinte + " Horas ");
+
+		}
+
+
+
+		sc.close();
+
+
+
+
+
+	}
+
+
+
+}
+
+
+
+=======================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio09 {
+
+
+
+	public static void main(String[] args) {
+
+		/*9) A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 
+
+		horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que 
+
+		leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser 
+
+		acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).*/
+
+		
+
+		Scanner sc = new Scanner (System.in);
+
+		
+
+		System.out.println("Digite quantas horas trabalhadas nos mês");
+
+        int horasTrabalhadas=sc.nextInt();
+
+        
+
+        System.out.println("Digite o valor da hora trabalhada $");
+
+        float valorHora=sc.nextFloat();
+
+        float salarioTotal; 
+
+        
+
+        if (horasTrabalhadas>160) {
+
+			salarioTotal=(horasTrabalhadas*valorHora)+((horasTrabalhadas-160)*valorHora)*50/100; 
+
+        	System.out.println("O Salário total do funcionario é: " +salarioTotal);
+
+		} else {
+
+
+
+			sc.close();
+
+		}
+
+
+
+	}
+
+
+
+}
+
+=====================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio10 {
+
+
+
+	public static void main(String[] args) {
+
+		/*10) Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. 
+
+		 * Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% 
+
+		 * sobre o que ultrapassar este valor, calcular e escrever o seu salário total.
+
+		 */
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite o valor do seu salário fixo");
+
+		float salarioFixo = sc.nextFloat();
+
+		
+
+		System.out.println("Digite o valor de vendas efetuado pelo usuário :");
+
+		float valoresVendas = sc.nextFloat();
+
+		
+
+		if (valoresVendas <1501) {
+
+			float salarioFinal = valoresVendas / 100 * 3 + salarioFixo;
+
+			System.out.println("O salario final corresponde a : R$" + salarioFinal);
+
+		}else {
+
+			float salarioFinal02 = (valoresVendas - 1500) * 5 / 100 + (1500 * 3 / 100) + salarioFixo;
+
+			System.out.println("O salario final do vendedor corresponde a : " + salarioFinal02);
+
+		}
+
+		
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio11 {
+
+
+
+	public static void main(String[] args) {
+
+		/* 11) Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e escrever o saldo atual 
+
+		(saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior ou igual a zero escrever a mensagem 
+
+		'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'*/
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite o numero da Conta: ");
+
+		float contaCliente = sc.nextFloat();
+
+		
+
+		System.out.println("Digite o Saldo da Conta - " + contaCliente + " : " );
+
+		float saldoEmConta = sc.nextFloat();
+
+		
+
+		System.out.println("Digite seu Debito: ");
+
+		float debitoDaConta = sc.nextFloat();
+
+		
+
+		System.out.println("Digite seu Credito Disponivel: ");
+
+		float creditoEmConta = sc.nextFloat();
+
+		
+
+		float saldoAtual = (saldoEmConta - debitoDaConta) + creditoEmConta;
+
+		
+
+		System.out.println("Cliente : " + contaCliente);
+
+		System.out.println("Saldo da Conta : R$" + saldoEmConta);
+
+		System.out.println("Debito da Conta: R$" + debitoDaConta);
+
+		
+
+		if (saldoAtual >= 0) {
+
+			System.out.println("O Saldo da Conta " + contaCliente + " E Positivo.");
+
+		}else {
+
+			System.out.println("O Saldo da Conta " + contaCliente + " E Negativo");
+
+		}
+
+		
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
+
+=========================================================================
+
+
+
+package exercicio05;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Exercicio12 {
+
+
+
+	public static void main(String[] args) {
+
+		/*12) Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque 
+
+		e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média 
+
+		((quantidademédia = quantidade máxima + quantidade mínima)/2). 
+
+		Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem '
+
+		Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.*/
+
+
+
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+
+		System.out.println("Digite a quantidade atual em estoque do produto: ");
+
+		float quantidadeEstoque = sc.nextFloat();
+
+		
+
+		System.out.println("Digite a quanntidade maxima do estoque: ");
+
+		float maximoEstoque = sc.nextFloat();
+
+		
+
+		System.out.println("Digite a quantidade minima do estoque: ");
+
+		float minimoEstoque = sc.nextFloat();
+
+		
+
+		float quantidadeMedia = (maximoEstoque + minimoEstoque) /2;
+
+		
+
+		if(quantidadeEstoque >= quantidadeMedia) {
+
+			System.out.println("Não esfetuar a compra");
+
+		}else {
+
+			System.out.println("Efetuar a compra");
+
+		}
+
+		
+
+		sc.close();
+
+
+
+	}
+
+
+
+}
